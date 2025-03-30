@@ -9,5 +9,7 @@ console.log(accountEmail);
 accountEmail="anc@hmail.com"
 accountPassword="21231313"
 accountCity="Benguluru"
+let accountlet
+var accountvar
 
-console.table([accountId,accountEmail,accountPassword,accountCity])
+console.table([accountId,accountEmail,accountPassword,accountCity,accountvar,accountlet])
