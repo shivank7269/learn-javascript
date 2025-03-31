@@ -56,4 +56,13 @@ a();
 // console.log(a);
 // console.log(b);
 // console.log(c);
+console.log(addone(5))   //this can be accessed because function is initialised
+
+function addone(num){
+    return num+1
+}
+// console.log(addtwo(5))     // this will give error refrence error not initialises
+const addtwo = function(num){
+    return num+2
+}  //this is hoisting
 
