@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM | Study with Shivank</title>
+</head>
+<body style="background-color:#212121;color:white;">
+    <div class="parent">
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thursday</div>
+    </div>
+    <span style="color:red"class="span">Type here</span>
+    <script>
+        const parent = document.querySelector(".parent")
+        console.log(parent);
+        const child = parent.children
+        for(let i=0;i<child.length;i++){
+            console.log(child[i].textContent)
+        }
+        const div=document.createElement("div")
+        function addDiv(){
+            div.className = "main"
+            div.id=Math.round(Math.random() * 10+1)
+            div.setAttribute("title","hello")
+            div.style.backgroundColor="green"
+            div.style.padding="12px"
+            div.innerText="Shivank"
+            const addText=document.createTextNode("Shivank singh chandel")
+            div.appendChild(addText)
+            document.body.append(div)
+        }
+        addDiv()
+    </script>
+</body>
+</html>
